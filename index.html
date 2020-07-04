@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <!--mocha-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mocha/8.0.1/mocha.css"
+    />
+
+    <!--describe
+    it-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/8.0.1/mocha.js"></script>
+    <!--налаштування mocha-->
+    <script>
+      mocha.setup("bdd");
+    </script>
+    <!--chai-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.2.0/chai.js"></script>
+    <!--Cтиль тестування-->
+    <script>
+      let assert = chai.assert;
+    </script>
+  </head>
+  <body>
+    <script src="js/index.js"></script>
+    <div id="mocha"></div>
+    <!--запуск mocha-->
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>
