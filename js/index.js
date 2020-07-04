@@ -19,11 +19,7 @@ class Fraction {
         d = d / 10;
       } while (n % 10 === 0 && d % 10 === 0);
     }
-
-    this._numerator = n;
-    this._denominator = d;
-
-    return new Fraction(this._numerator, this._denominator);
+    return new Fraction(n, d);
   }
 
   isInteger() {
@@ -213,7 +209,7 @@ describe("Testing", () => {
       assert.equal(result5._numerator, fraction13._numerator);
       assert.equal(result5._denominator, fraction13._denominator);
     });
-    it(`new Fraction(${fraction1._numerator},${fraction1._denominator}) - new Fraction(${fraction2._numerator},${fraction2._denominator}) = new Fraction(${fraction14._numerator},${fraction14._denominator})`, () => {
+    it(`new Fraction(${fraction4._numerator},${fraction4._denominator}) - new Fraction(${fraction5._numerator},${fraction5._denominator}) = new Fraction(${fraction14._numerator},${fraction14._denominator})`, () => {
       assert.equal(result6._numerator, fraction14._numerator);
       assert.equal(result6._denominator, fraction14._denominator);
     });
@@ -237,7 +233,7 @@ describe("Testing", () => {
     });
   });
   describe("Testing Division", () => {
-    it(`new Fraction(${fraction21._numerator},${fraction21._denominator}) : new Fraction(${fraction22._numerator},${fraction22._denominator}) = new Fraction(${fraction23._numerator},${fraction23._denominator})`, () => {
+    it(`new Fraction(${fraction21._numerator},${fraction21._denominator}) : new Fraction(${fraction22._numerator},${fraction22._denominator}) = new Fraction(${fraction27._numerator},${fraction27._denominator})`, () => {
       assert.equal(result11._numerator, fraction27._numerator);
       assert.equal(result11._denominator, fraction27._denominator);
     });
